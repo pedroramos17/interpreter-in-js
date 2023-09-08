@@ -1,0 +1,14 @@
+{
+  "name": "interpreter-in-js",
+  "version": "1.0.0",
+  "description": "A simple interpreter in JavaScript",
+  "main": "identifier.js",
+  "scripts": {
+    "test": "node --test lexer.test.js parser.test.js",
+    "test:watch": "node --test --watch lexer.test.js parser.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
