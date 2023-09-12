@@ -2,7 +2,6 @@
   "name": "interpreter-in-js",
   "version": "1.0.0",
   "description": "A simple interpreter in JavaScript",
-  "main": "identifier.js",
   "scripts": {
     "start": "node --watch src/repl.js",
     "test": "node --test tests/",
