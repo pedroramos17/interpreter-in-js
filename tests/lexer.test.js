@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
-import { Tokens } from './token/token.js'
-import Lexer from './lexer.js'
+import { Tokens } from '../src/token/token.js'
+import Lexer from '../src/lexer.js'
 
 describe('Lexer', () => {
   it('matches each token', () => {

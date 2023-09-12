@@ -4,11 +4,16 @@
   "description": "A simple interpreter in JavaScript",
   "main": "identifier.js",
   "scripts": {
-    "test": "node --test lexer.test.js parser.test.js",
-    "test:watch": "node --test --watch lexer.test.js parser.test.js"
+    "start": "node --watch src/repl.js",
+    "test": "node --test tests/",
+    "test:watch": "node --test --watch tests/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "npm": "9.8.1",
+    "node": "20.6.1"
+  }
 }

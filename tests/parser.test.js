@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
-import Parser from './parser.js'
-import Lexer from './lexer.js'
+import Parser from '../src/parser.js'
+import Lexer from '../src/lexer.js'
 
 describe('Parser', () => {
   describe('parserProgram', () => {
@@ -22,12 +22,13 @@ describe('Parser', () => {
         { identifier: 'foobar' },
       ]
 
-      tests.forEach(({identifier}, index) => {
+      tests.forEach(({identifier, value}, index) => {
         const statement = program.statements[index]
+        const letTokenLiteral = statement.tokenLiteral()
 
         console.log(statement.tokenLiteral())
 
-        assert.equal(statement.tokenLiteral(), 'let')
+        assert.equal(letTokenLiteral, 'let')
         assert.equal(statement.name.value, identifier)
         assert.equal(statement.name.tokenLiteral(), identifier)
       })

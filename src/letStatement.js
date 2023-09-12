@@ -8,7 +8,7 @@ export default class LetStatement {
   kind
 
   constructor(token) {
-    this.token = new Token(this.kind, this.value)
+    this.token = token
     this.kind = StatementKind.LET
   }
 
